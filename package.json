@@ -1,0 +1,23 @@
+{
+  "name": "jsclasses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages deploy -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maheshkareeya/mahesh.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maheshkareeya/mahesh.github.io/issues"
+  },
+  "homepage": "https://github.com/maheshkareeya/mahesh.github.io",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
