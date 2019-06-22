@@ -15,8 +15,8 @@ class MyHead extends HTMLElement{
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css">
-        <link rel="stylesheet" href="./css/style.css">
-    </head>` : '<link rel="stylesheet" href="./css/style.css">';
+        
+    </head>` : '';
     this.innerHTML = headappend;
 
     }
