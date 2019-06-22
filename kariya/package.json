@@ -1,0 +1,12 @@
+{
+  "name": "kariya",
+  "version": "1.0.0",
+  "description": "",
+ 
+  "scripts": {
+    "start": "firebase serve --only functions,hosting"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

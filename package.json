@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages deploy -d kariya/functions/public"
+    "deploy": "git add . && git commit -am 'ok' && gh-pages deploy -d kariya/functions/public"
+    
   },
   "repository": {
     "type": "git",
