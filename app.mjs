@@ -3,5 +3,9 @@ import { } from './web-elements/mk-navbar.mjs';
 import { } from './web-elements/mk-table.mjs';
 import { } from './web-elements/mk-model-form.mjs';
 import { } from './web-elements/mk-sidebar.mjs';
+import { } from './web-elements/mk-home.mjs';
+import { } from './web-elements/mk-profile.mjs';
+
+
 
 

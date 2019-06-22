@@ -3,56 +3,75 @@
         <link rel="manifest" href="./manifest.json">
         <link rel="stylesheet" href="./css/style.css">
         <script type="module" src="./app.mjs"></script>
-        
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css"> -->
         <mk-head bootstrap title="Mahesh Kariya"></mk-head>
-        
-       
-
-<div class="container">
+        <div class="container">
         <div class="header" id="header">
             <div class="rx_icon" id="rx_icon"></div>
             <div class="title" id="title"></div>
         </div>
         <div class="container">
             <div class="content">
-                    <br><br>
-                    <!-- <button class="btn-dark" id="btnAdd">ok</button> -->
-                    <!-- <h3 class="alert alert-success">Mahesh Kariya</h3> -->
-                    <mk-model-form ></mk-model-form>
-                    <mk-table url-name="https://jsonplaceholder.typicode.com/todos?_limit=10"></mk-table>
-              
+                    <script>
+                        function okna(){
+                            window.history.pushState("object or string", "Title", "/new-url");
+                        }
+                        window.onpopstate = function(e){
+                            if(e.state){
+                                document.getElementById("route").innerHTML = e.state.html;
+                                document.title = e.state.pageTitle;
+                            }
+                        };
+                        function processAjaxData(pagetitle,response, urlPath){
+                            document.getElementById("route").innerHTML = response;
+                            document.title = pagetitle;
+                            window.history.pushState({"html":response,"pageTitle":pagetitle},"", urlPath);
+                        }
+                    </script>
+
+                    <div id="route"></div>
+                    
+                    <script src="./js/router.js"></script>  
             </div>
-          
-            <nav class="mobile-bottom-nav">
-                <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
-                    <a style="text-decoration:none" href="./home.html">
-                    <div class="mobile-bottom-nav__item-content">
-                         <i  class="material-icons">home</i>
-                        Home
-                    </div></a>		
-                
-                </div>
-                <div class="mobile-bottom-nav__item">	
-                        <a style="text-decoration:none" href="./index.html">	
-                    <div class="mobile-bottom-nav__item-content">
-                        <i class="material-icons">mail</i>
-                        Inbox
-                    </div>
-                    </a>
-                </div>
+                <nav class="mobile-bottom-nav">
+                    <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+                            <!-- <a style="text-decoration:none" href="./mk-navbar"> -->
+                            <div onclick="processAjaxData('Navbar','<mk-navbar></mk-navbar>', '/mk-navbar')" class="mobile-bottom-nav__item-content">
+                                 <i  class="material-icons">home</i>
+                                Home
+                            </div>
+                        <!-- </a>		 -->
+                        
+                        </div>
+                        <div class="mobile-bottom-nav__item">	
+                                <!-- <a style="text-decoration:none" href="./mk-home"> -->
+                            <div onclick="processAjaxData('Home','<mk-home></mk-home>', '/mk-home')" class="mobile-bottom-nav__item-content">
+                                <i class="material-icons">mail</i>
+                                Inbox
+                            </div>
+                        <!-- </a> -->
+                            
+                        </div>
                 <div class="mobile-bottom-nav__item">
-                    <div class="mobile-bottom-nav__item-content">
+                        <!-- <a style="text-decoration:none" href="./mk-profile"> -->
+                    <div onclick="processAjaxData('Profile','<mk-profile></mk-profile>', '/mk-profile')"  class="mobile-bottom-nav__item-content">
                         <i class="material-icons">person</i>
-                        three
-                    </div>		
+                        Profile
+                    </div>	
+                    <!-- </a>	 -->
                 </div>
                 
                 <div class="mobile-bottom-nav__item">
-                    <div class="mobile-bottom-nav__item-content">
+                        
+                    <!-- <a style="text-decoration:none" href="./mk-phone"> -->
+                    <div onclick="processAjaxData('Phone','<mk-phone></mk-phone>', '/mk-phone')"  class="mobile-bottom-nav__item-content">
                         <i class="material-icons">phone</i>
                         four
-                    </div>		
+                    </div>	
+                    <!-- </a>	 -->
                 </div>
             </nav>
        
@@ -61,13 +80,13 @@
 
        
 
-        <!-- <mk-navbar url-name="https://jsonplaceholder.typicode.com/todos?_limit=5"></mk-navbar> -->
        
     </div>
     <script src="./js/script.js"></script>
-
+<!-- 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>
 </html>
+
