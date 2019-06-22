@@ -3,7 +3,7 @@
   "short_name": "Mahesh",
   "theme_color": "#b5c0cb",
   "background_color": "#b5c0cb",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation":"portrait",
   "start_url": "./index.html",
   "icons": [
