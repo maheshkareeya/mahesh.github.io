@@ -19,3 +19,11 @@
     at bootstrapNodeJSCore (internal/bootstrap/node.js:743:3)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2019-06-22T20:26:07.130Z] ----------------------------------------------------------------------
+[debug] [2019-06-22T20:26:07.132Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-22T20:26:07.133Z] CLI Version:   7.0.0
+[debug] [2019-06-22T20:26:07.133Z] Platform:      darwin
+[debug] [2019-06-22T20:26:07.133Z] Node Version:  v10.14.2
+[debug] [2019-06-22T20:26:07.134Z] Time:          Sun Jun 23 2019 01:56:07 GMT+0530 (India Standard Time)
+[debug] [2019-06-22T20:26:07.134Z] ----------------------------------------------------------------------
+[debug] 
