@@ -1,30 +1,30 @@
 
 if('serviceWorker' in navigator){
     window.addEventListener('load',()=>{
-        navigator.serviceWorker
+         navigator.serviceWorker
         .register('../sw.js')
         .then((reg)=>console.log('service worker'))
         .catch(err=>console.log(err))
     })
  }
 
-let deferredPrompt;
-window.addEventListener('beforeinstallprompt',(e)=>{
-e.priventDefault();
-deferredPrompt = e;
-})
+// let deferredPrompt;
+// window.addEventListener('beforeinstallprompt',(e)=>{
+// e.preventDefault();
+// deferredPrompt = e;
+// })
 
-btnAdd = document.getElementById('btnAdd');
-btnAdd.addEventListener('click',e=>{
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then((choiceResult)=>{
-        if(choiceResult === 'accepted'){
-            console.log('User accepted');
-        }
-        deferredPrompt = null;
-    })
+// btnAdd = document.getElementById('btnAdd');
+// btnAdd.addEventListener('click',e=>{
+//     deferredPrompt.prompt();
+//     deferredPrompt.userChoice.then((choiceResult)=>{
+//         if(choiceResult === 'accepted'){
+//             console.log('User accepted');
+//         }
+//         deferredPrompt = null;
+//     })
 
-})
+// })
 
 
 var drawer,
