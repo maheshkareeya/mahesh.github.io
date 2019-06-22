@@ -1,4 +1,4 @@
-if(window.location.href != ''){
+if(window.location.href !== ''){
     var url = window.location.href;
     console.log(window.location.href);
     var filename = url.split('/').pop();
