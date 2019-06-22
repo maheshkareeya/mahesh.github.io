@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
         <link rel="manifest" href="./manifest.json">
-        <script type="module" src="./app.mjs"></script>
         <link rel="stylesheet" href="./css/style.css">
+        <script type="module" src="./app.mjs"></script>
+        
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <mk-head bootstrap title="Mahesh Kariya"></mk-head>
         
@@ -17,7 +18,7 @@
             <div class="content">
                     <br><br>
                     <!-- <button class="btn-dark" id="btnAdd">ok</button> -->
-                    <h3 class="alert alert-success">Mahesh Kariya</h3>
+                    <!-- <h3 class="alert alert-success">Mahesh Kariya</h3> -->
                     <mk-model-form ></mk-model-form>
                     <mk-table url-name="https://jsonplaceholder.typicode.com/todos?_limit=10"></mk-table>
               
@@ -25,16 +26,20 @@
           
             <nav class="mobile-bottom-nav">
                 <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+                    <a style="text-decoration:none" href="./home.html">
                     <div class="mobile-bottom-nav__item-content">
-                        <i  class="material-icons">home</i>
-                        one
-                    </div>		
+                         <i  class="material-icons">home</i>
+                        Home
+                    </div></a>		
+                
                 </div>
-                <div class="mobile-bottom-nav__item">		
+                <div class="mobile-bottom-nav__item">	
+                        <a style="text-decoration:none" href="./index.html">	
                     <div class="mobile-bottom-nav__item-content">
                         <i class="material-icons">mail</i>
-                        two
+                        Inbox
                     </div>
+                    </a>
                 </div>
                 <div class="mobile-bottom-nav__item">
                     <div class="mobile-bottom-nav__item-content">
