@@ -1,5 +1,8 @@
-var cacheName = 'v1';
-var cacheAssets =[
+
+
+"use strict"
+const cacheName = 'v5';
+const cacheAssets =[
     'index.html',
     '/css/style.css',
     '/js/script.js',
@@ -42,7 +45,7 @@ self.addEventListener('activate',(e)=>{
     )
 });
 self.addEventListener('fetch',e=>{
-   console.log('Service Worker: Fetching');
+  
    e.respondWith(
        fetch(e.request).catch(() =>caches.match(e.request))
    )
