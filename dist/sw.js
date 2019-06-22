@@ -1,17 +1,17 @@
 
 
 "use strict"
-const cacheName = 'v5';
+const cacheName = 'v1';
 const cacheAssets =[
-    'index.html',
-    '/css/style.css',
-    '/js/script.js',
-    '/web-elements/mk-head.mjs',
-    '/web-elements/mk-model-form.mjs',
-    '/web-elements/mk-navbar.mjs',
-    '/web-elements/mk-sidebar.mjs',
-    '/web-elements/mk-table.mjs',
-    'app.mjs'
+    './index.html',
+    './css/style.css',
+    './js/script.js',
+    './web-elements/mk-head.mjs',
+    './web-elements/mk-model-form.mjs',
+    './web-elements/mk-navbar.mjs',
+    './web-elements/mk-sidebar.mjs',
+    './web-elements/mk-table.mjs',
+    './app.mjs'
 ]
 // Call install event
 self.addEventListener('install',(e)=>{
