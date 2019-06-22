@@ -8,6 +8,23 @@ if('serviceWorker' in navigator){
     })
  }
 
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt',(e)=>{
+e.priventDefault();
+deferredPrompt = e;
+})
+
+btnAdd = document.getElementById('btnAdd');
+btnAdd.addEventListener('click',e=>{
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult)=>{
+        if(choiceResult === 'accepted'){
+            console.log('User accepted');
+        }
+        deferredPrompt = null;
+    })
+
+})
 
 
 var drawer,

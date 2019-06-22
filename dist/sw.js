@@ -1,5 +1,3 @@
-
-
 "use strict"
 const cacheName = 'v1';
 const cacheAssets =[
@@ -13,12 +11,13 @@ const cacheAssets =[
     './web-elements/mk-table.mjs',
     './app.mjs'
 ]
+
 // Call install event
-self.addEventListener('install',(e)=>{
+self.addEventListener('install',async e=>{
   
     console.log('Service Worker Installed');
     e.waitUntil(
-    caches
+    await caches
     .open(cacheName)
     .then(cache =>{
         console.log('Caching Files')
@@ -50,3 +49,7 @@ self.addEventListener('fetch',e=>{
        fetch(e.request).catch(() =>caches.match(e.request))
    )
 })
+self.addEventListener('apiinstalled',(evt)=>{
+applicationCache.logEvent('a2hs','installed'); 
+})
+
