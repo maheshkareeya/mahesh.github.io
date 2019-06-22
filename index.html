@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+        <link rel="manifest" href="./manifest.json">
         <script type="module" src="./app.mjs"></script>
         <mk-head bootstrap title="Mahesh Kariya"></mk-head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="manifest" href="manifest.json">
+       
 
 <div class="container">
         <div class="header" id="header">
@@ -13,6 +14,7 @@
         <div class="container">
             <div class="content">
                     <br><br>
+                    <button class="btn-dark" id="btnAdd">ok</button>
                     <h3 class="alert alert-success">Mahesh Kariya</h3>
                     <mk-model-form ></mk-model-form>
                     <mk-table url-name="https://jsonplaceholder.typicode.com/todos?_limit=10"></mk-table>
@@ -22,7 +24,7 @@
             <nav class="mobile-bottom-nav">
                 <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
                     <div class="mobile-bottom-nav__item-content">
-                        <i class="material-icons">home</i>
+                        <i  class="material-icons">home</i>
                         one
                     </div>		
                 </div>
