@@ -5,13 +5,11 @@
         <script type="module" src="./app.mjs"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/css/swiper.min.css">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-orange.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap-reboot.min.css">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.0-rc4/angular-material.css"> -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/css/swiper.min.css">
+       <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-orange.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+       <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css"> -->
         <mk-head bootstrap title="Mahesh Kariya"></mk-head>
         <div>
@@ -20,15 +18,10 @@
             <div class="title" id="title"></div>
         </div>
         <div >
-           <!-- <mk-users-list></mk-users-list> -->
-          <!-- <br><br><br><br> <mk-form></mk-form> -->
                     <script>
-                      /*  function okna(){
+                        function okna(){
                             window.history.pushState("object or string", "Title", "/new-url");
-                        }*/
-
-
-                        
+                        }
                         window.onpopstate = function(e){
                             if(e.state){
                                 document.getElementById("route").innerHTML = e.state.html;
@@ -39,23 +32,6 @@
                             document.getElementById("route").innerHTML = response;
                             document.title = pagetitle;
                             window.history.pushState({"html":response,"pageTitle":pagetitle},"", '/'+urlPath);
-                          
-                        var swiper = new Swiper('.swiper-container', {
-                            pagination: '.swiper-pagination',
-                            slidesPerView: 1,
-                            paginationClickable: true,
-                            loop: true,
-                                paginationBulletRender: function (index, className) {
-                            var tabsName = ['Apps', 'Tricks', 'News', 'Games'];
-                            if ( index === (tabsName.length - 1) ) {
-                                        return	'<span class="' + className + '">'
-                                            + tabsName[index] + '</span>'
-                                            + '<div class="active-mark "></div>';
-                            }
-                            return '<span class="' + className + '">' + tabsName[index] + '</span>';
-                                }
-                        });
-  
                         }
                     </script>
 
@@ -65,7 +41,7 @@
                 <nav class="mobile-bottom-nav">
                     <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
                             <!-- <a style="text-decoration:none" href="./mk-navbar"> -->
-                            <div onclick="processAjaxData('Navbar','<mk-home></mk-home>', '')" class="mobile-bottom-nav__item-content">
+                            <div onclick="processAjaxData('Home','<mk-home></mk-home>', '')" class="mobile-bottom-nav__item-content">
                                  <i  class="material-icons">home</i>
                                 Home
                             </div>
@@ -83,9 +59,9 @@
                         </div>
                 <div class="mobile-bottom-nav__item">
                         <!-- <a style="text-decoration:none" href="./mk-profile"> -->
-                    <div onclick="processAjaxData('Profile','<mk-profile></mk-profile>', 'mk-profile')"  class="mobile-bottom-nav__item-content">
+                    <div onclick="processAjaxData('Form','<mk-form></mk-form>', 'mk-form')"  class="mobile-bottom-nav__item-content">
                         <i class="material-icons">person</i>
-                        Profile
+                        Form
                     </div>	
                     <!-- </a>	 -->
                 </div>
@@ -93,9 +69,9 @@
                 <div class="mobile-bottom-nav__item">
                         
                     <!-- <a style="text-decoration:none" href="./mk-phone"> -->
-                    <div onclick="processAjaxData('Form','<mk-form></mk-form>', 'mk-form')"  class="mobile-bottom-nav__item-content">
+                    <div onclick="processAjaxData('Phone','<mk-phone></mk-phone>', 'mk-phone')"  class="mobile-bottom-nav__item-content">
                         <i class="material-icons">phone</i>
-                        Form
+                        four
                     </div>	
                     <!-- </a>	 -->
                 </div>
@@ -112,7 +88,6 @@
     <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
     <script type="module" src="./js/script.mjs"></script>
-    
 <!-- 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
