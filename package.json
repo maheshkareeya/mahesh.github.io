@@ -2,7 +2,6 @@
   "name": "jsclasses",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "deploy": "git add . && git commit -am 'ok' && gh-pages deploy -d kariya/functions/public"
     

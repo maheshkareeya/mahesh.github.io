@@ -1,12 +1,12 @@
 {
   "name": "kariya",
   "version": "1.0.0",
-  "description": "",
+  "description": "All",
  
   "scripts": {
     "start": "firebase serve --only functions,hosting"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mahesh Kariya",
   "license": "ISC"
 }

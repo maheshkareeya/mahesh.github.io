@@ -1,0 +1,19 @@
+{
+  "name": "@m-k/web-elements",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maheshkareeya/web-elements.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maheshkareeya/web-elements/issues"
+  },
+  "homepage": "https://github.com/maheshkareeya/web-elements#readme"
+}

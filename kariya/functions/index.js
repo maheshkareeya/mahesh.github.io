@@ -1,7 +1,13 @@
 const functions = require('firebase-functions');
 const express = require("express");
-const app =express();
-app.get('/api/',(req,res)=>{
-    res.send("ok");
-})
+const bodyParser = require("body-parser");
+const cors = require('cors');
+
+bodyParser.urlencoded({extended:true});
+bodyParser.json();
+const app = express();
+app.use(cors({ origin: true }));
+app.use('/api',require("./router/apis.router"));
+
+
 exports.app = functions.https.onRequest(app);
