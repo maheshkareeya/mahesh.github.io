@@ -94,7 +94,7 @@ class MyQuizCard extends MK{
   
   // if(element.id == localStorage.getItem(localStorage.key('mcqid'))){
           htmlbody += `
-        <br><br><br><br>
+        <br><br><br>
         <div class="container-box">
   <div class="scrollbar" id="style-11">
   <div class="force-overflow">
@@ -102,7 +102,6 @@ class MyQuizCard extends MK{
 </div>
 </div>
 </div>
-<br><br>
   <div class="noselect container-box">
   
     <div  class="box b">A</div>
