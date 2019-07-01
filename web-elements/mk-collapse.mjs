@@ -4,7 +4,7 @@ connectedCallback(){
     this.render();
 }
 render(){
-    this.innerHTML = this.hasAttribute('hide')?``:`<div class="row">
+    this.innerHTML = this.hasAttribute('hide')?``:`<div class="noselect row">
     <div style="margin-bottom:10em" class="col">
       <h2>Open <b>Description</b></h2>
       <div class="tabs">
@@ -64,7 +64,7 @@ render(){
     background: #1a252f;
   }
   .tab-label::after {
-    content: "👉🏼";
+    content: ">";
     width: 1em;
     height: 1em;
     text-align: center;

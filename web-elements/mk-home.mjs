@@ -1,19 +1,22 @@
-class MyHome extends HTMLElement{
+import MK from '../js/mk.mjs'
+ class MyHome extends MK{
     connectedCallback() {
+      this.change('title','MK MAHESH KARIYA');
       this.render();
+      
       }
     render() {
 
           let home = `
-          <div class="swiper-container">
-        
-            <div class="swiper-pagination">
+          <div  class="swiper-container">
+       
+            <div style="position:fixed;margin-top:50px;" class="swiper-pagination">
             </div>
             <div class="swiper-wrapper">
-              <div class="swiper-slide">Tab 1</div>
-              <div class="swiper-slide">Tab 2</div>
-              <div class="swiper-slide">Tab 3</div>
-              <div class="swiper-slide">Tab 4</div>
+              <div class="swiper-slide"><mk-profile><mk-profile></div>
+              <div class="swiper-slide"><mk-profile><mk-profile></div>
+              <div class="swiper-slide"><mk-profile><mk-profile></div>
+              <div class="swiper-slide"><mk-profile><mk-profile></div>
             </div>
           </div>
         <style>:root {
@@ -26,8 +29,8 @@ class MyHome extends HTMLElement{
         *::after {
           box-sizing: inherit;
         }
-        
-
+                    
+     
         
         a {
           text-decoration: none;
@@ -60,12 +63,14 @@ class MyHome extends HTMLElement{
         }
         
         .swiper-container {
+
           width: 100%;
           height: 100%;
-          margin: 60px auto 0;
+          margin: 50px auto 0;
         }
         @media screen and (min-width: 800px) {
           .swiper-container {
+            margin-top:5rem;
             width: 70%;
             margin-left: 15%;
           }
@@ -80,6 +85,7 @@ class MyHome extends HTMLElement{
           justify-content: center;
           align-items: center;
           text-align: center;
+          
         }
         
         .swiper-container-horizontal > .swiper-pagination {
@@ -101,7 +107,7 @@ class MyHome extends HTMLElement{
         }
         
         .swiper-pagination-bullet {
-          background-color: #687894;
+          background-color: #2c3e50;
           border-radius: 0;
           box-sizing: border-box;
           color: #fff;

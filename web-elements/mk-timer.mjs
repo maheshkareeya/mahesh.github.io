@@ -34,7 +34,7 @@ let countDown = new Date('Oct 29, 2019 00:00:00').getTime(),
   
       }, second)
     this.innerHTML = this.hasAttribute('hide')?``:`<div class="timer">
-    <h4 id="head">Countdown :</h4>
+ 
     <ul>
       <li class="li"><span id="days"></span>days</li>
       <li class="li"><span id="hours"></span>Hours</li>
@@ -47,22 +47,24 @@ let countDown = new Date('Oct 29, 2019 00:00:00').getTime(),
   <style>
 
   .timer{
-      margin-top:2em;
+      margin-top:-2.5em;
+      margin-left:2em;
       text-align:center;
+     
   }
   
   
   .li {
     display: inline-block;
-    font-size: 0.5em;
+    font-size: 0.7em;
     list-style-type: none;
-    padding: 1em;
+    padding-left: 1em;
     text-transform: uppercase;
   }
   
   .li span {
     display: block;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }</style>`
 }
 

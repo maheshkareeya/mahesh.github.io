@@ -11,6 +11,12 @@ import { } from './web-elements/mk-form.mjs';
 import { } from './web-elements/mk-quiz.mjs';
 import { } from './web-elements/mk-timer.mjs';
 import { } from './web-elements/mk-collapse.mjs';
+import { } from './web-elements/mk-quiz-choice.mjs';
+import { } from './web-elements/mk-list.mjs';
+import { } from './web-elements/mk-login.mjs';
+
+
+
 
 
 

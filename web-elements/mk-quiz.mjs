@@ -1,7 +1,6 @@
 import MK from '../js/mk.mjs'
 import {} from './mk-quiz-card.mjs';
 import {} from './mk-timer.mjs';
-import {} from './mk-collapse.mjs';
 
 
 class MyQuiz extends MK{
@@ -41,20 +40,20 @@ this.render();
                 if(current == item.length){
                     
                     if(element.data.id == current){
-                        console.log(element.question);
-                        this.innerHTML =`<mk-timer ></mk-timer><mk-quiz-card id="question" dataid='${element.data.id}' que='${element.data.question}' ans='${element.data.ans}' A='${element.data.A}' B='${element.data.B}' C='${element.data.C}' D='${element.data.D}'  prev=${current-1} current=${current} total='${item.length}'></mk-quiz-card><mk-collapse></mk-collapse>`;
+                        // console.log(element.data.answer);
+                        this.innerHTML =`<mk-quiz-card  id="question" dataid='${element.data.id}' que='${element.data.question}' answer='${element.data.answer}' A='${element.data.A}' B='${element.data.B}' C='${element.data.C}' D='${element.data.D}'  prev=${current-1} current=${current} total='${item.length}'></mk-quiz-card>`;
                     }
                 }
               else
                 {
                 if(element.data.id == 1 && current == 1){
-                    console.log(element.data.question);
+                    // console.log(element.data.answer);
                     
-                    this.innerHTML =`<mk-timer ></mk-timer><mk-quiz-card id="question" dataid='${element.data.id}' que='${element.data.question}' ans='${element.data.ans}' A='${element.data.A}' B='${element.data.B}' C='${element.data.C}' D='${element.data.D}'  next=${current+1} current=${current} total='${item.length}'></mk-quiz-card><mk-collapse></mk-collapse>`;
+                    this.innerHTML =`<mk-quiz-card  id="question" dataid='${element.data.id}' que='${element.data.question}' answer='${element.data.answer}' A='${element.data.A}' B='${element.data.B}' C='${element.data.C}' D='${element.data.D}'  next=${current+1} current=${current} total='${item.length}'></mk-quiz-card>`;
                 }
                 else if(element.data.id == current && element.data.id != 1){
-                    console.log(element.data.question);
-                    this.innerHTML =`<mk-timer ></mk-timer><mk-quiz-card id="question" dataid='${element.data.id}' que='${element.data.question}' ans='${element.data.ans}' A='${element.data.A}' B='${element.data.B}' C='${element.data.C}' D='${element.data.D}' next=${current+1} prev=${current-1} current=${current} total='${item.length}'></mk-quiz-card><mk-collapse></mk-collapse>`;
+                    // console.log(element.data.answer);
+                    this.innerHTML =`<mk-quiz-card  id="question" dataid='${element.data.id}' que='${element.data.question}' answer='${element.data.answer}' A='${element.data.A}' B='${element.data.B}' C='${element.data.C}' D='${element.data.D}' next=${current+1} prev=${current-1} current=${current} total='${item.length}'></mk-quiz-card>`;
                 }
                 }
                 // else{

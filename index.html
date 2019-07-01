@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="manifest" href="./manifest.json">
         <link rel="stylesheet" href="./css/style.css">
         <script type="module" src="./app.mjs"></script>
@@ -14,6 +18,8 @@
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css"> -->
         <mk-head bootstrap title="Mahesh Kariya"></mk-head>
+        </head>
+        <!-- <body id="body" class="body"> -->
         <div>
         <div class="header" id="header">
             <div class="rx_icon" id="rx_icon"></div>
@@ -31,6 +37,7 @@
                         
                         window.onpopstate = function(e){
                             if(e.state){
+                                
                                 document.getElementById("route").innerHTML = e.state.html;
                                 document.title = e.state.pageTitle;
                             }
@@ -77,6 +84,7 @@
                             <div onclick="processAjaxData('Home','<br><br><mk-quiz></mk-quiz>', 'mk-quiz')" class="mobile-bottom-nav__item-content">
                                 <i class="material-icons">mail</i>
                                 Inbox
+
                             </div>
                         <!-- </a> -->
                             
@@ -102,12 +110,14 @@
             </nav>
        
         </div>
+        
         <mk-sidebar></mk-sidebar>
 
        
 
        
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
